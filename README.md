@@ -80,13 +80,37 @@ También se visualiza una matriz de confusión para evaluar el rendimiento del m
 
 ```bash
 .
-├── datasets/
-│   └── spam/
-├── Spam_Classifier.pkl
-├── preprocess_pipeline.pkl
-├── spam_classifier.py
+├── datasets/ 
+|  └── spam/ 
+├── Spam_Classifier.pkl 
+├── preprocess_pipeline.pkl 
+├── api_spam.py 
+├── probar_api.py 
 └── requirements.txt
+
 ```
+## Archivos del Proyecto
+
+### `api_spam.py`
+Este script es responsable de correr el modelo de clasificación de spam. Implementa una API (probablemente utilizando Flask o FastAPI) que permite interactuar con el modelo entrenado. A través de esta API, puedes enviar correos electrónicos para que sean clasificados como "spam" o "ham" (no spam). El script carga el modelo y el pipeline de preprocesamiento previamente guardado y realiza las predicciones sobre los correos enviados.
+
+### `probar_api.py`
+Este script está diseñado para probar la API definida en `api_spam.py`. Envía correos electrónicos de ejemplo a la API para verificar que el modelo esté funcionando correctamente y que la clasificación de los correos como "spam" o "ham" sea precisa. Es útil para asegurar que la implementación de la API y el modelo esté operando de manera adecuada.
+
+## Uso
+
+1. Para correr la API que clasifica correos, ejecuta el script `api_spam.py`:
+
+    ```bash
+    python api_spam.py
+    ```
+
+2. Para probar la API y verificar la clasificación de los correos electrónicos, ejecuta:
+
+    ```bash
+    python probar_api.py
+    ```
+
 
 ## Contribuciones
 
