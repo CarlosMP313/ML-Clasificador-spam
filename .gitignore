@@ -3,3 +3,27 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Ignorar directorios de cache de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar el directorio de datasets
+datasets/
+
+# Ignorar archivos de entornos virtuales
+venv/
+env/
+
+# Ignorar archivos de configuración de IDEs
+.idea/
+.vscode/
+
+# Ignorar archivos generados
+*.pkl
+*.log
+
+# Ignorar archivos temporales
+*.bak
+*.swp
+*.swo
