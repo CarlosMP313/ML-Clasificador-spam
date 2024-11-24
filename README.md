@@ -78,17 +78,25 @@ También se visualiza una matriz de confusión para evaluar el rendimiento del m
 
 ## Estructura del Proyecto
 
-```bash
-.
-├── datasets/ 
-|  └── spam/ 
-├── Spam_Classifier.pkl 
-├── preprocess_pipeline.pkl 
-├── api_spam.py 
-├── probar_api.py 
-└── requirements.txt
-
+```plaintext
+ML-CLASIFICADOR-SPAM/
+├── Modelo ML/
+│   ├── __pycache__/
+│   ├── .ipynb_checkpoints/
+│   ├── datasets/
+│   ├── api_spam.py
+│   ├── ModeloMejorado.py
+│   ├── preprocess_pipeline.pkl
+│   ├── probar_api.py
+│   ├── README.md
+│   ├── Spam_Classifier.pkl
+├── .gitignore
+├── LICENSE
+├── Modelo ML.ipynb
+├── README.md
+├── requirements.txt
 ```
+
 ## Archivos del Proyecto
 
 ### `api_spam.py`
